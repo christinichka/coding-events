@@ -22,8 +22,7 @@ public class EventController {
 //        events.add("Stadium of Fire");
 //        events.add("Super Bowl");
 //        events.add("Chalk the Block");
-//        model.addAttribute("events", events);   // Add list to model
-        model.addAttribute("events", events);
+        model.addAttribute("events", events);   // Add list to model
         return "events/index";   // Return template name
     }
 
