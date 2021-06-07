@@ -8,6 +8,11 @@
 
 <h1>All Events</h1>
 
+<nav th:replace="fragments :: navigation"></nav>
+
+<!-- if this boolean statement evaluates to true it will not display this, if the boolean statement evaluates to false it will display it-->
+<p th:unless="${events} and ${events.size()}">No events!</p>
+
 <ul>
     <th:block th:each="event : ${events}">
         <li th:text="${event}"></li>
