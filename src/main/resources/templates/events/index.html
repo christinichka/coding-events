@@ -10,15 +10,23 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
+        <th>Location</th>
         <th>Description</th>
+        <th>Registration</th>
         <th>Contact Email</th>
+        <th>Number of Attendees</th>
+        <th>Meal Provided</th>
     </tr>
     </thead>
     <tr th:each="event : ${events}">
         <td th:text="${event.id}"></td>
         <td th:text="${event.name}"></td>
+        <td th:text="${event.location}"></td>
         <td th:text="${event.description}"></td>
+        <td th:text="${event.registration}"></td>
         <td th:text="${event.contactEmail}"></td>
+        <td th:text="${event.numberOfAttendees}"></td>
+        <td th:text="${event.mealProvided}"></td>
     </tr>
 </table>
 
