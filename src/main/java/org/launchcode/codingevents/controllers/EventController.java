@@ -21,7 +21,7 @@ import java.util.Optional;
 public class EventController {
 
     @Autowired
-    private EventCategoryRepository eventRepository;
+    private EventRepository eventRepository;
 
     @Autowired
     private EventCategoryRepository eventCategoryRepository;
